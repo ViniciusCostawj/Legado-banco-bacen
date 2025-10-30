@@ -137,12 +137,19 @@ Copiar código
 
 🧰 Tecnologias Utilizadas
 Tecnologia	Descrição
+
 FastAPI	Framework moderno e assíncrono
+
 HTTPX	Cliente HTTP com suporte a mTLS
+
 Cryptography	Manipulação de certificados PFX
+
 SignXML	Assinatura digital XMLDSig
+
 LXML	Criação e manipulação de XML ISO 20022
+
 Pydantic	Modelagem e validação de dados
+
 Dotenv	Leitura de variáveis de ambiente
 
 🧩 Fluxo de Operações
