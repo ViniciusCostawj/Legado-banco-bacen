@@ -27,10 +27,13 @@ Realiza autenticação mTLS, assinatura digital XMLDSig e envio de transações 
 - Arquivo `.env` com:
   ```env
   BACEN_PFX_PASSWORD=sua_senha
+  
 2️⃣ Instalação
 bash
 Copiar código
-pip install fastapi httpx cryptography python-dotenv signxml lxml uvicorn
+pip install fastapi | httpx | cryptography | python-dotenv | signxml | lxml | uvicorn
+
+
 3️⃣ Estrutura recomendada
 bash
 Copiar código
@@ -40,12 +43,21 @@ projeto_spi/
 ├── certificados/
 │   └── teste.pfx
 └── requirements.txt
+
+
 4️⃣ Executar servidor
 bash
 Copiar código
+
+$env:BACEN_PFX_PASSWORD = "sua_senha_secreta_aqui"
+
 uvicorn main:app --reload
+
+
 🧠 Endpoints Principais
+
 🔹 Conectar ao SPI
+
 Rota: POST /api/conectar
 
 Exemplo:
@@ -53,8 +65,10 @@ Exemplo:
 bash
 Copiar código
 curl -X POST http://127.0.0.1:8000/api/conectar \
+
   -H "Content-Type: application/json" \
   -d '{"ispb": "12345678", "usuario": "USUARIO_SPI", "senha": "SENHA_SPI"}'
+
 Retorno:
 
 json
@@ -103,6 +117,7 @@ Retorno:
 
 json
 Copiar código
+
 {
   "DictConsultarTodasChavesResponse": {
     "Retorno": 0,
@@ -119,6 +134,7 @@ Copiar código
     ]
   }
 }
+
 🧰 Tecnologias Utilizadas
 Tecnologia	Descrição
 FastAPI	Framework moderno e assíncrono
