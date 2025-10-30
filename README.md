@@ -168,3 +168,6 @@ Novos endpoints (devoluções, liquidações, etc)
 
 📄 Licença
 Este projeto é de uso interno e segue as diretrizes do Banco Central do Brasil para comunicação com o SPI e DICT.
+
+📬 Autor: Vinicius Costa
+💻 Contato: viniciuscostawj@gmail.com
